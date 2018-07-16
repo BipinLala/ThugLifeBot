@@ -4,6 +4,19 @@ var socket = io();
 var face, errcode, confirmedurl, origimgurl;
 var clearit;
 
+$(document).ready(function () {
+    setTimeout(function(){
+        $('#text').fadeIn(1000);
+    }, 700);
+});
+
+$(document).ready(function () {
+    setTimeout(function(){
+        $('#dealwithitbot').fadeIn(500);
+    }, 2000);
+});
+
+
 if (getQueryVariable('link')) {
 
     $('#container').html('');
@@ -39,7 +52,7 @@ function resizewait(){
 }
 
 $('body').on('click', "#twitter", function () {
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Thug Life ..... ' + encodeURI('http://localhost:3000/index.html?link=') + encodeURI(origimgurl)) + '&hashtags=DSC Projects');
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Thug Life ..... ' + encodeURI('http://localhost:3000/index.html?link=') + encodeURI(origimgurl)) + '&hashtags=DSCBVP Projects');
     console.log('Button pressed');
 });
 

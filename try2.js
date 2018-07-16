@@ -14,7 +14,7 @@ var client = new oxford.Client('5c0e69eeb71141e0888eb6158adf1e61','westcentralus
 
 client.face.detect({
     // url: 'https://upload.wikimedia.org/wikipedia/commons/3/37/Dagestani_man_and_woman.jpg',
-    path: "./aashita1.jpeg",
+    path: "./heman.jpeg",
     analyzesAge: true,
     analyzesGender: true
 }).then(function (response) {

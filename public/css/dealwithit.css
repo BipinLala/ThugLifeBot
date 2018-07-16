@@ -1,5 +1,7 @@
    body {
-    background-color: white;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding:0;
     width: 100%;
@@ -49,6 +51,8 @@ div#text {
     text-align: center;
     z-index: 20;
     position: relative;
+    font-size: 60px;
+    display: none;
     }
 
 form {
@@ -59,8 +63,10 @@ form {
 }
 
 img#dealwithitbot {
-    max-height: 50vh;
-    max-width: 70vw;   
+    height: 60vh;
+    width: 50vw;   
+    display: none;
+    clip: 40px, 0px, 40px, 0px;
 }
 
 input[type=url] {
@@ -71,10 +77,13 @@ input[type=url] {
     font-size: 18px;
     text-align:center;
     border: 1px solid gray;
+    border-radius: 30px;
+    background-color: black;
+    color: white;  
 }
 
 input[type=button], input[type=submit] {
-    background-color: cornflowerblue;
+    background-color: rgb(44, 44, 44);
     color: white;
     height: 50px;
     text-decoration: bold;
@@ -82,7 +91,18 @@ input[type=button], input[type=submit] {
     font-size: 18px;
     padding: 8px;
     cursor: pointer;
+    border-radius:30px; 
 }
+
+input[type=button]:hover, input[type=submit]:hover {
+    background-color: black;
+    color: grey;
+}
+
+input[type=url]:hover {
+    background-color: rgb(44, 44, 44);
+}
+
 
 input:disabled{
     background-color: rgba(200,200,200,.6);
@@ -90,8 +110,8 @@ input:disabled{
 }
 
 footer {
-    background-color: rgba(200,200,200,.3);
-    color: black;
+    background-color: cornflowerblue;
+    color: white;
     font-family: 'Segoe UI', 'Verdana', sans-serif;
     position: fixed;
     bottom: 0;
@@ -106,6 +126,6 @@ p {
 
 a {
     text-decoration: underline;
-    color: black;
+    color: whitesmoke;
     font-family: 'Segoe UI', 'Verdana', sans-serif;
 }
