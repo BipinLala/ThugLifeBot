@@ -6,7 +6,7 @@ var port = process.env.PORT || 3000;
 
 
 var oxford = require('project-oxford');
-var client = new oxford.Client('5c0e69eeb71141e0888eb6158adf1e61', 'westcentralus');
+var client = new oxford.Client('PROJECT OXFORD KEY', 'westcentralus');
 
 server.listen(port, function(){
     console.log("Server Running on port 3000");
